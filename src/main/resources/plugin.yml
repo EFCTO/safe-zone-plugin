@@ -1,0 +1,31 @@
+name: SafeZonePlugin
+version: 1.0
+main: com.example.safezoneplugin.SafeZonePlugin
+api-version: 1.21
+author: GOC
+description: 안전구역, 보호구역, 거래 시스템을 추가하는 마인크래프트 플러그인
+
+commands:
+  safezone:
+    description: 안전구역을 설정합니다.
+    usage: /safezone
+    permission: safezoneplugin.safezone
+    permission-message: "이 명령어를 사용할 권한이 없습니다."
+  guardzone:
+    description: 보호구역을 설정합니다.
+    usage: /guardzone
+    permission: safezoneplugin.guardzone
+    permission-message: "이 명령어를 사용할 권한이 없습니다."
+  trade:
+    description: 플레이어 간 거래를 시작합니다.
+    usage: /trade <플레이어명>
+    permission: safezoneplugin.trade
+    permission-message: "이 명령어를 사용할 권한이 없습니다."
+
+permissions:
+  safezoneplugin.safezone:
+    default: op
+  safezoneplugin.guardzone:
+    default: op
+  safezoneplugin.trade:
+    default: true  # 모든 유저가 사용 가능
